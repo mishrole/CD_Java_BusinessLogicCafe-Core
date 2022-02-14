@@ -74,7 +74,7 @@ public class CafeUtil {
             System.out.println("Hay " + customers.size() + " personas frente a ti");
             customers.add(userName);
             System.out.println(Arrays.toString(customers.toArray()));
-            System.out.println("Para salir, escribe q. Si quieres continuar, presiona enter");
+            System.out.println("\nPara salir, escribe q. Si quieres continuar, presiona enter");
             String commandLine = System.console().readLine();
             command = commandLine;
         }
