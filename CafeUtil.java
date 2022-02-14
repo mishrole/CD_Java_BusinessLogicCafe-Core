@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Arrays;
 public class CafeUtil {
     // Bonus Ninja
     public Integer getStreakGoal(Integer numWeeks) {
@@ -35,9 +35,7 @@ public class CafeUtil {
         System.out.println("Hay " + customers.size() + " personas frente a ti");
         customers.add(userName);
 
-        for (int i = 0; i < customers.size(); i++) {
-            System.out.println(i + " " + customers.get(i));
-        }
+        System.out.println(Arrays.toString(customers.toArray()));
     }
 
     public void printPriceChart(String product, double price, int maxQuantity) {
@@ -75,9 +73,7 @@ public class CafeUtil {
             System.out.println(String.format("Hola %s", userName));
             System.out.println("Hay " + customers.size() + " personas frente a ti");
             customers.add(userName);
-            for (int i = 0; i < customers.size(); i++) {
-                System.out.println(i + " " + customers.get(i));
-            }
+            System.out.println(Arrays.toString(customers.toArray()));
             System.out.println("Para salir, escribe q. Si quieres continuar, presiona enter");
             String commandLine = System.console().readLine();
             command = commandLine;
